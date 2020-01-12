@@ -41,6 +41,6 @@ class codeBOT:
         self.driver.execute_script(key)
         sleep(5)
 
-a = codeBOT('bartoszostafint9l@gmail.com', 'Barteko2003')
+a = codeBOT('login', 'password')
 b = a.genFetch(5,59462700,74166,1095,'maze')
 a.sendPog(b)
