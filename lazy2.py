@@ -1,8 +1,11 @@
-from seleniumrequests import Chrome
 from selenium import webdriver
 from time import sleep
 import random
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities    
+
+#TODO 
+#Fix Loops
+#Add comments
 
 class codeBOT:
     def __init__(self, login, password):
