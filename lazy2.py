@@ -1,7 +1,6 @@
 from selenium import webdriver
 from time import sleep
 import random
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities    
 
 #TODO 
 #Fix Loops
@@ -11,6 +10,18 @@ class codeBOT:
     def __init__(self, login, password):
         self.login = login
         self.password = password
+        self.driver = webdriver.Chrome()
+        self.login = self.login
+        self.driver.get('https://code.org/')
+        self.driver.find_element_by_xpath('//*[@id="signin_button"]')\
+            .click()
+        sleep(6)
+        self.driver.find_element_by_xpath('//*[@id="user_login"]')\
+            .send_keys(self.login)
+        self.driver.find_element_by_xpath('//*[@id="user_password"]')\
+            .send_keys(self.password)
+        self.driver.find_element_by_xpath('//*[@id="signin-button"]')\
+            .click()
 
     def genFetch(self,iterator,amount,ida,before,after,appName):
         FirstHalf = 'fetch("https://studio.code.org/milestone/{id}/{before}/{after}"'
@@ -25,28 +36,15 @@ class codeBOT:
         sec = LastHalf.format(appName=appName,time=time,lines=lines,attempts=attempts)
         return (first + Middle + str(sec) + '});')
 
-    #TODO Move that again into init, delete capabilites
+    #TODO Move that again into init
     def sendPog(self,key):
-        capabilities = DesiredCapabilities.CHROME
-        capabilities['loggingPrefs'] = {'browser': 'ALL'}
-        self.driver = webdriver.Chrome(desired_capabilities=capabilities)
-        self.login = self.login
-        self.driver.get('https://code.org/')
-        self.driver.find_element_by_xpath('//*[@id="signin_button"]')\
-            .click()
-        sleep(6)
-        self.driver.find_element_by_xpath('//*[@id="user_login"]')\
-            .send_keys(self.login)
-        self.driver.find_element_by_xpath('//*[@id="user_password"]')\
-            .send_keys(self.password)
-        self.driver.find_element_by_xpath('//*[@id="signin-button"]')\
-            .click()
         self.driver.execute_script(key)
         sleep(5)
 
 #FIXME 10 Chromes opening is not good
 
 my_bot = codeBOT('login', 'password')
-for i in range(8):
-    script = my_bot.genFetch(i,5,59462700,74166,1095,'maze')
+for i in range(21):
+    script = my_bot.genFetch(i,5,59462700,74150,949,'turtle')
+    print('Sending '+str(i))
     my_bot.sendPog(script)
