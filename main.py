@@ -2,9 +2,16 @@ from selenium import webdriver
 from time import sleep
 import random
 
-#TODO 
-#Add comments
-#Write instrutctions 
+#Input Values
+#Example down there
+
+request_id = 59462700
+request_before = 74150
+request_after = 949
+app_name = 'turtle'
+excerciseAmount = 10
+login = 'login'
+password = 'password'
 
 class codeBOT:
     def __init__(self, login, password):
@@ -40,8 +47,8 @@ class codeBOT:
         self.driver.execute_script(key)
         sleep(5)
 
-my_bot = codeBOT('login', 'password')
-for i in range(21):
-    script = my_bot.genFetch(i,59462700,74150,949,'turtle')
+my_bot = codeBOT(login, password)
+for i in range(excerciseAmount):
+    script = my_bot.genFetch(i,request_id,request_before,request_after,app_name)
     print('Sending '+str(i))
     my_bot.sendPog(script)
