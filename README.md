@@ -37,3 +37,8 @@ Installation
   * **app_name** = app
   9. Type in value for how many excercises you need to do.
   10. Finally type in your login and password into variables with same name.
+  11. Run in your shell:
+  
+    `$ python ./main.py`
+    
+  12. Let it run 😮
