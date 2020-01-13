@@ -26,7 +26,7 @@ Installation
   3. Open developer console
   4. Enter **Network** tab
   5. Check **Preserve Log**
-  6. Start execution of code
+  6. Start execution of code (on code.org)
   7. Look for POST request as shown on the picture
   ![img](https://github.com/zgredinzyyy/2busy2homework/blob/master/img/help.png)
   * **ID** = First digits
