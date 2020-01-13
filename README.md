@@ -35,7 +35,7 @@ Installation
   8. Look for appName at the end of request
   ![app](https://github.com/zgredinzyyy/2busy2homework/blob/master/img/app.png)
   * **app_name** = app
-  9. Type in value for how many excercises you need to do.
+  9. Type in value for how many excercises you need to do. (Type +/- 3 because sometimes links are little bit apart)
   10. Finally type in your login and password into variables with same name.
   11. Run in your shell:
 
