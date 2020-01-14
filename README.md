@@ -1,6 +1,6 @@
 # 2busy2homework 🙊
 
-**2busy2homework** is a tool that allows sending POST request to code.org for automatic excercise completion. 
+**2busy2homework** is a tool that allows sending POST request to code.org for automatic exercises completion. 
 Using selenium it's capable of sending Form Data with *random* generated values of attempts, completion time and lines of code.  
 
 Installation
@@ -22,7 +22,7 @@ Installation
 **Get required values from your course:**
 
   1. Go to the course
-  2. Enter any excercise
+  2. Enter any exercise
   3. Open developer console
   4. Enter **Network** tab
   5. Check **Preserve Log**

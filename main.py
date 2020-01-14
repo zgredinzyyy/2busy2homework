@@ -9,7 +9,7 @@ request_id = 59462700
 request_before = 74150
 request_after = 949
 app_name = 'turtle'
-excerciseAmount = 10
+exercisesAmount = 10
 login = 'login'
 password = 'password'
 
@@ -48,7 +48,7 @@ class codeBOT:
         sleep(5)
 
 my_bot = codeBOT(login, password)
-for i in range(excerciseAmount):
+for i in range(exercisesAmount):
     script = my_bot.genFetch(i,request_id,request_before,request_after,app_name)
     print('Sending '+str(i))
     my_bot.sendPog(script)
