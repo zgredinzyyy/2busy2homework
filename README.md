@@ -19,7 +19,8 @@ Installation
  * [Chrome Version](https://www.whatismybrowser.com/detect/what-version-of-chrome-do-i-have)
  * [chromedriver.exe](https://chromedriver.chromium.org/)
 
-**Get required values from your course:**
+Usage
+-----
 
   1. Go to the course
   2. Enter any exercise
