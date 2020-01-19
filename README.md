@@ -6,6 +6,8 @@ Using selenium it's capable of sending Form Data with *random* generated values 
 Installation
 ------------
 
+###### Requires Python 3.6.X
+
 **Clone repo:**
 
   `$ git clone https://github.com/zgredinzyyy/2busy2homework`
