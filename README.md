@@ -34,7 +34,7 @@ Usage
   ![img](https://github.com/zgredinzyyy/2busy2homework/blob/master/img/help.png)
   * **ID** = First digits
   * **Before** = Second digits
-  * **After** = Second digits
+  * **After** = Third digits
   8. Look for appName at the end of request
   ![app](https://github.com/zgredinzyyy/2busy2homework/blob/master/img/app.png)
   * **app_name** = app
